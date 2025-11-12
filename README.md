@@ -14,8 +14,8 @@ This project exposes a `src/chat_with_data.py` script (the main app). The script
 
 ## File layout (expected)
 
-ChatWithYourData/
 ![alt text](image.png)
+
 --------------
 
 ## Quick start (recommended)
