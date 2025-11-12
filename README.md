@@ -14,16 +14,8 @@ This project exposes a `src/chat_with_data.py` script (the main app). The script
 
 ## File layout (expected)
 
-ChatWithYourData_Bot/
-├── src/
-│ └── chat_with_data.py # main Panel app script
-├── docs/
-│ └── learning-and-teaching-prompt-templates.pdf # example PDF
-├── .env # (not committed) OPENAI_API_KEY=sk-...
-├── requirements.txt
-├── .gitignore
-└── README.md
-
+ChatWithYourData/
+![alt text](image.png)
 --------------
 
 ## Quick start (recommended)
@@ -31,6 +23,7 @@ ChatWithYourData_Bot/
 1. Clone / copy this repo and `cd` into it:
 
 git clone <your-repo-url>
+
 cd ChatWithYourData_Bot
 
 2. Create and activate a virtual environment:
@@ -38,18 +31,21 @@ cd ChatWithYourData_Bot
 macOS / Linux:
 
 python -m venv .venv
+
 source .venv/bin/activate
 
 
 Windows (PowerShell):
 
 python -m venv .venv
+
 .\.venv\Scripts\Activate.ps1
 
 
 3. Install dependencies:
 
 python -m pip install -U pip
+
 python -m pip install -r requirements.txt
 
 
@@ -62,14 +58,19 @@ If .env is missing, the script will prompt you for the API key at runtime.
 5. Put at least one PDF into docs/ (example used in the code: docs/learning-and-teaching-prompt-templates.pdf). Or use the UI file-upload widget after launching the app.
 
 ---------
+## Running the app
+
+Two ways:
 
 A — Use Panel CLI (recommended while developing)
+
 panel serve src/chat_with_data.py --show
 
 
 This starts a local server (default http://localhost:5006) and opens your browser.
 
 B — Run as a script (if script includes the __main__ snippet)
+
 python src/chat_with_data.py
 
 
@@ -77,7 +78,7 @@ This will attempt to start the Panel server programmatically and open a browser 
 
 ---------
 
-How it works (short)
+## How it works (short)
 
 load_db(file, chain_type, k) loads the PDF → splits → creates embeddings → builds DocArray index.
 
@@ -87,7 +88,7 @@ Panel + Param build the UI (Conversation, Database info, Chat History, Configure
 
 ----
 
-Tips & troubleshooting
+## Tips & troubleshooting
 
 File not found: If you see ValueError: File path ... is not a valid file or url, ensure the PDF exists under the docs/ folder or update the default path in src/chat_with_data.py. The script resolves paths relative to the repo root (if implemented) — if not, use an absolute path.
 
