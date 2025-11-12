@@ -1,4 +1,4 @@
-# ChatWithYourData
+# Chat With Your Data
 
 Interactive Panel dashboard that builds a local document vector DB from a PDF, performs retrieval using embeddings, and provides a conversational UI backed by OpenAI.
 
