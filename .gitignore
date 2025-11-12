@@ -1,0 +1,109 @@
+# ---------------------------
+# Python cache & build files
+# ---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.dll
+*.egg-info/
+dist/
+build/
+.eggs/
+*.spec
+
+# ---------------------------
+# Virtual environments
+# ---------------------------
+.venv/
+venv/
+env/
+ENV/
+.venv*/
+env*/
+venv*/
+Scripts/
+bin/
+Include/
+Lib/
+pyvenv.cfg
+
+# ---------------------------
+# Environment variables / secrets
+# ---------------------------
+.env
+.env.*
+*.env
+
+# ---------------------------
+# Editor / IDE / OS specific
+# ---------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# ---------------------------
+# Logs, caches, temp files
+# ---------------------------
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.cache
+*.bak
+*.tmp
+*.pid
+nohup.out
+
+# ---------------------------
+# Jupyter / Notebooks / Panel
+# ---------------------------
+.ipynb_checkpoints/
+.panel_cache/
+*.ipynb
+*.bak.ipynb
+
+# ---------------------------
+# Docs, vector stores, model outputs
+# ---------------------------
+docs/chroma/
+docs/temp.pdf
+docs/*.db
+docs/*.sqlite
+docs/*.json
+data/
+outputs/
+models/
+persisted_embeddings/
+docarray_data/
+vectorstore_data/
+
+# ---------------------------
+# Frontend / build tools (if any)
+# ---------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ---------------------------
+# OS generated
+# ---------------------------
+Icon?
+ehthumbs.db
+Desktop.ini
+
+# ---------------------------
+# Misc
+# ---------------------------
+*.zip
+*.tar.gz
+*.tgz
